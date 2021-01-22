@@ -1,5 +1,8 @@
 SCRIPT_DIR=$HOME/dotfiles
 
+HISTSIZE=100000
+SAVEHIST=100000
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -21,6 +24,7 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+source $SCRIPT_DIR/zsh/alias.zsh
 source $SCRIPT_DIR/zsh/plugins.zsh
 source $SCRIPT_DIR/zsh/config.zsh
 
