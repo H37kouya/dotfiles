@@ -25,4 +25,4 @@ source $SCRIPT_DIR/zsh/plugins.zsh
 source $SCRIPT_DIR/zsh/config.zsh
 
 # To customize prompt, run `p10k configure`.
-[[ ! -f ~/.p10k.zsh ]] || source $SCRIPT_DIR/.p10k.zsh
+source $SCRIPT_DIR/zsh/.p10k.zsh
