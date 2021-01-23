@@ -14,88 +14,65 @@ which brew >/dev/null 2>&1 && brew update
 echo "ok. run brew upgrade..."
 brew upgrade
 
-formulas=(
-    anyenv
-    asciinema
-    bat
-    cmake
-    ctop
-    composer
-    exa
-    ffmpeg
-    fd
-    gcc
-    gh
-    git
-    gitui
-    jrnl
-    navi
-    neofetch
-    nnn
-    procs
-    poppler
-    php@7.4
-    pstree
-    python@3.9
-    sampler
-    sd
-    sqlite
-    starship
-    thefuck
-    tldr
-    tmux
-    tmuxinator
-    tree
-)
-
 echo "brew tap"
 # brew tap thirdparty
 brew tap homebrew/cask-fonts
 
 echo "brew install formula"
-for formula in "${formulas[@]}"; do
-    brew install $formula || brew upgrade $formula
-done
+brew install anyenv || brew upgrade anyenv
+brew install asciinema || brew upgrade asciinema
+brew install bat || brew upgrade bat
+brew install cmake || brew upgrade cmake
+brew install ctop || brew upgrade ctop
+brew install composer || brew upgrade composer
+brew install exa || brew upgrade exa
+brew install ffmpeg || brew upgrade ffmpeg
+brew install fd || brew upgrade fd
+brew install gcc || brew upgrade gcc
+brew install gh || brew upgrade gh
+brew install git || brew upgrade git
+brew install jrnl || brew upgrade jrnl
+brew install navi || brew upgrade navi
+brew install neofetch || brew upgrade neofetch
+brew install nnn || brew upgrade nnn
+brew install procs || brew upgrade procs
+brew install poppler || brew upgrade poppler
+brew install pstree || brew upgrade pstree
+brew install python@3.9 || brew upgrade python@3.9
+brew install sampler || brew upgrade sampler
+brew install sd || brew upgrade sd
+brew install sqlite || brew upgrade sqlite
+brew install starship || brew upgrade starship
+brew install thefuck || brew upgrade thefuck
+brew install tldr || brew upgrade tldr
+brew install tmux || brew upgrade tmux
+brew install tmuxinator || brew upgrade tmuxinator
+brew install tree || brew upgrade tree
 
 echo ${OSTYPE}
 # Each OS 
 case ${OSTYPE} in
-    darwin20*)
-        formulas=(
-            php@7.4
-        )
-        for formula in "${formulas[@]}"; do
-            brew install $formula || brew upgrade $formula
-        done
-
-        casks=(
-            discord
-            google-chrome
-            postman
-            jetbrains-toolbox
-            slack
-            spotify
-            font-hackgen
-            font-hackgen-nerd
-        )
+    darwin20* )
+        brew install gitui || brew upgrade gitui
+        brew install php@7.4 || brew upgrade php@7.4
 
         echo "brew casks"
-        for cask in "${casks[@]}"; do
-            brew install --cask $cask
-        done
-    ;;
-    linux-gnu*)
-        formulas=(
-            zsh
-        )
-        for formula in "${formulas[@]}"; do
-            brew install $formula || brew upgrade $formula
-        done
-    ;;
+        brew install --cask discord
+        brew install --cask google-chrome
+        brew install --cask postman
+        brew install --cask jetbrains-toolbox
+        brew install --cask slack
+        brew install --cask spotify
+        brew install --cask font-hackgen
+        brew install --cask font-hackgen-nerd
+        ;;
+    linux-gnu* ) brew install zsh || brew upgrade zsh ;;
 
-    *) ;;
+    *) echo ${OSTYPE} ;;
 esac
 
+
+echo "brew cleanup"
 brew cleanup
 
 echo "brew installed"
