@@ -18,11 +18,13 @@ formulas=(
     anyenv
     asciinema
     bat
+    cmake
     ctop
     composer
     exa
     ffmpeg
     fd
+    gcc
     gh
     git
     gitui
@@ -59,6 +61,13 @@ echo ${OSTYPE}
 # Each OS 
 case ${OSTYPE} in
     darwin20*)
+        formulas=(
+            php@7.4
+        )
+        for formula in "${formulas[@]}"; do
+            brew install $formula || brew upgrade $formula
+        done
+
         casks=(
             discord
             google-chrome
@@ -73,6 +82,14 @@ case ${OSTYPE} in
         echo "brew casks"
         for cask in "${casks[@]}"; do
             brew install --cask $cask
+        done
+    ;;
+    linux-gnu*)
+        formulas=(
+            zsh
+        )
+        for formula in "${formulas[@]}"; do
+            brew install $formula || brew upgrade $formula
         done
     ;;
 
