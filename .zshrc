@@ -1,7 +1,11 @@
 SCRIPT_DIR=$HOME/dotfiles
 
+export LANG=ja_JP.UTF-8
+HISTFILE=$HOME/.zsh-history
 HISTSIZE=100000
 SAVEHIST=100000
+
+setopt share_history
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -25,6 +29,7 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 source $SCRIPT_DIR/zsh/alias.zsh
+source $SCRIPT_DIR/zsh/path.zsh
 source $SCRIPT_DIR/zsh/plugins.zsh
 source $SCRIPT_DIR/zsh/config.zsh
 

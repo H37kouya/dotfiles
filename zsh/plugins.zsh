@@ -6,6 +6,8 @@ zinit load junegunn/fzf-bin
 # 入力中のコマンドと一致するコマンドを履歴から探す
 zinit ice wait'2' lucid
 zinit light zsh-users/zsh-autosuggestions
+zinit ice wait'2' lucid
+zinit light zsh-users/zsh-history-substring-search
 
 # Fast Syntax Highlighting
 zinit light zdharma/fast-syntax-highlighting
