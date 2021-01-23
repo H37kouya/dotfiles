@@ -9,6 +9,7 @@ case ${OSTYPE} in
 
         # Homebrew
         export PATH="$HOMEBREW_PATH/bin:$PATH"
+        export PATH="$HOMEBREW_PATH/sbin:$PATH"
 
         # PHP
         export PATH="$HOMEBREW_PATH/opt/php@7.4/bin:$PATH"

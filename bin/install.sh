@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SCRIPT_DIR=$HOME/dotfiles
+
 echo "installing homebrew..."
 which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -18,19 +20,14 @@ formulas=(
     bat
     ctop
     composer
-    dat
     exa
     ffmpeg
     fd
-    font-hackgen
-    font-hackgen-nerd
     gh
     git
     gitui
     jrnl
-    mas
     navi
-    neovim
     neofetch
     nnn
     procs
@@ -42,7 +39,6 @@ formulas=(
     sd
     sqlite
     starship
-    taskell
     thefuck
     tldr
     tmux
@@ -60,10 +56,25 @@ for formula in "${formulas[@]}"; do
     brew install $formula || brew upgrade $formula
 done
 
+echo ${OSTYPE}
 # Each OS 
 case ${OSTYPE} in
-    darwin20.0*)
-        sh ./brew_cask.sh
+    darwin20*)
+        casks=(
+            discord
+            google-chrome
+            postman
+            jetbrains-toolbox
+            slack
+            spotify
+            font-hackgen
+            font-hackgen-nerd
+        )
+
+        echo "brew casks"
+        for cask in "${casks[@]}"; do
+            brew install --cask $cask
+        done
     ;;
 
     *) ;;
