@@ -9,3 +9,25 @@ $ cd ~/dotfiels
 
 $ make deploy
 ```
+
+## WSL 
+
+### Installation for hackgen
+
+Example, Windows terminal settings 
+``` json
+{
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles.
+            "fontFace":  "HackGen35Nerd Console",
+            "colorScheme" : "Dracula"
+        }
+    }
+}
+```
+
+- https://github.com/yuru7/HackGen
+- https://www.beeete2.com/blog/?p=2619
