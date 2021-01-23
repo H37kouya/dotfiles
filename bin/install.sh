@@ -44,7 +44,6 @@ formulas=(
     tmux
     tmuxinator
     tree
-    yarn
 )
 
 echo "brew tap"
