@@ -22,3 +22,6 @@ zinit light b4b4r07/enhancd
 # shの補完機能をさらに強化するプラグイン
 zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
   zsh-users/zsh-completions
+
+# color
+zinit light chrissicool/zsh-256color
