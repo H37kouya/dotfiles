@@ -31,3 +31,11 @@ Example, Windows terminal settings
 
 - https://github.com/yuru7/HackGen
 - https://www.beeete2.com/blog/?p=2619
+
+## Vscode
+
+``` json
+{
+  "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace"
+}
+```
