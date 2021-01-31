@@ -13,6 +13,7 @@ if [ "$#" -eq 0 ]; then
     tmux split-window -v
     tmux resize-pane -D 5
     tmux select-pane -U
+    tmux set-window-option synchronize-panes on
 else
   case $1 in
     1)
