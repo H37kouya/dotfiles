@@ -2,30 +2,29 @@
 
 ## Installation
 
-``` shell
+```shell
 $ git clone https://github.com/H37kouya/dotfiles.git ~/dotfiles
 
-$ cd ~/dotfiels
+$ cd ~/dotfiles
 
 $ make deploy
 ```
 
-## WSL 
+## WSL
 
 ### Installation for hackgen
 
-Example, Windows terminal settings 
-``` json
+Example, Windows terminal settings
+
+```json
 {
-    "profiles":
-    {
-        "defaults":
-        {
-            // Put settings here that you want to apply to all profiles.
-            "fontFace":  "HackGen35Nerd Console",
-            "colorScheme" : "Dracula"
-        }
+  "profiles": {
+    "defaults": {
+      // Put settings here that you want to apply to all profiles.
+      "fontFace": "HackGen35Nerd Console",
+      "colorScheme": "Dracula"
     }
+  }
 }
 ```
 
@@ -34,10 +33,10 @@ Example, Windows terminal settings
 
 ## Vscode
 
-``` json
+```json
 {
-    "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
-    "editor.inlineHints.fontFamily": "HackGen35Nerd, 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
-    "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif"
+  "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
+  "editor.inlineHints.fontFamily": "HackGen35Nerd, 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
+  "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif"
 }
 ```
