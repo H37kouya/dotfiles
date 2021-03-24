@@ -10,6 +10,11 @@ alias tcase="$SCRIPT_DIR/bin/tmux.sh"
 # Docker
 alias dc="docker-compose"
 
+# Common
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 # OS 別の設定
 case ${OSTYPE} in
     darwin20.0*)
