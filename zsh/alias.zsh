@@ -7,6 +7,9 @@ alias tall-off="tmux set-window-option synchronize-panes off"
 alias tsource="tmux source ~/.tmux.conf"
 alias tcase="$SCRIPT_DIR/bin/tmux.sh"
 
+# Git
+alias git-branch-delete="git branch --merged|egrep -v '\*|develop|master|main'|xargs git branch -d"
+
 # Docker
 alias dc="docker-compose"
 
