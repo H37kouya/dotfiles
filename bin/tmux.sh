@@ -4,7 +4,6 @@
 # set tmux panes
 if [ "$#" -eq 0 ]; then
     tmux split-window -h
-    tmux split-window -v
     tmux resize-pane -D 15
     tmux select-pane -t 1
     tmux split-window -v
