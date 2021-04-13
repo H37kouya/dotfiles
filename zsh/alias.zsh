@@ -10,6 +10,18 @@ alias tcase="$SCRIPT_DIR/bin/tmux.sh"
 # Docker
 alias dc="docker-compose"
 
+# Common ls
+case ${OSTYPE} in
+    darwin*)
+        export LSCOLORS=xbfxcxdxbxegedabagacad
+        alias ls='ls -G'
+        ;;
+    *)
+        eval `dircolors ~/.colorrc`
+        alias ls='ls --color=auto'
+        ;;
+esac
+
 # Common
 alias cp='cp -i'
 alias mv='mv -i'
