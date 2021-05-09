@@ -1,0 +1,5 @@
+font-hackgen
+font-hackgen-nerd
+miniforge
+spotify
+viber

@@ -1,7 +1,22 @@
 # anyenv
 eval "$(anyenv init -)"
 
-# Each OS 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Each OS
 case ${OSTYPE} in
     # M1 Mac
     darwin20.0*)
@@ -14,6 +29,9 @@ case ${OSTYPE} in
         # PHP
         export PATH="$HOMEBREW_PATH/opt/php@7.4/bin:$PATH"
         export PATH="$HOMEBREW_PATH/opt/php@7.4/sbin:$PATH"
+
+        # Rust
+        export PATH="$HOME/.cargo/bin:$PATH"
         ;;
 
     # WSL2
