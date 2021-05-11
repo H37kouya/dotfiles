@@ -32,6 +32,10 @@ case ${OSTYPE} in
 
         # Rust
         export PATH="$HOME/.cargo/bin:$PATH"
+
+        # Go
+        export GOPATH=$HOME/go;
+        export PATH=$PATH:$GOPATH/bin;
         ;;
 
     # WSL2
@@ -41,6 +45,10 @@ case ${OSTYPE} in
         # Homebrew
         export PATH="$HOMEBREW_PATH/bin:$PATH"
         export PATH="$HOMEBREW_PATH/sbin:$PATH"
+
+        # Go
+        export GOPATH=$HOME/go;
+        export PATH=$PATH:$GOPATH/bin;
         ;;
 
     *)
