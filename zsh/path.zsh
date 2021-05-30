@@ -34,8 +34,8 @@ case ${OSTYPE} in
         export PATH="$HOME/.cargo/bin:$PATH"
 
         # Go
-        export GOPATH=$HOME/go;
-        export PATH=$PATH:$GOPATH/bin;
+        export GOPATH=$HOME/go
+        export PATH=$GOPATH/bin:$PATH
         ;;
 
     # WSL2
