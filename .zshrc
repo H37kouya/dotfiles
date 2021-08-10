@@ -9,3 +9,5 @@ SCRIPT_DIR=$HOME/dotfiles
 [ -f ~/zsh/tmux.zsh ] && source $SCRIPT_DIR/zsh/tmux.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+conda activate lib-python-study

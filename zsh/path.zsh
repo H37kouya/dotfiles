@@ -1,4 +1,7 @@
 # anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+
+# anyenv
 eval "$(anyenv init -)"
 
 # >>> conda initialize >>>
@@ -36,6 +39,14 @@ case ${OSTYPE} in
         # Go
         export GOPATH=$HOME/go
         export PATH=$GOPATH/bin:$PATH
+
+        # Python
+        export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
+
+        # GCC
+        # alias gcc="$HOMEBREW_PATH/opt/gcc/bin/gcc-11"
+        # export CC=gcc
+        # export CXX=gcc
         ;;
 
     # WSL2
