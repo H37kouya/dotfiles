@@ -28,15 +28,13 @@ Example, Windows terminal settings
 }
 ```
 
-- https://github.com/yuru7/HackGen
-- https://www.beeete2.com/blog/?p=2619
+- https://github.com/H37kouya/dotfiles/wiki/font
 
 ## Vscode
 
 ```json
 {
   "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
-  "editor.inlineHints.fontFamily": "HackGen35Nerd, 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
   "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif"
 }
 ```
