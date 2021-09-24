@@ -27,4 +27,5 @@ fi
 # exa
 if builtin command -v bat > /dev/null; then
     alias ls="exa"
+    alias ls-tree="exa --tree"
 fi
