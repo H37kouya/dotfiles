@@ -3,6 +3,9 @@ HISTFILE=$HOME/.zsh-history
 HISTSIZE=100000
 SAVEHIST=100000
 
+# 補完機能を有効にする
+autoload -Uz compinit && compinit
+
 # 補完候補一覧でファイルの種別を識別マーク表示(ls -F の記号)
 setopt list_types
 # lsコマンドの補完候補にも色付き表示
