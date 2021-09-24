@@ -12,6 +12,7 @@ alias git-branch-delete="git branch --merged|egrep -v '\*|develop|master|main'|x
 
 # Docker
 alias dc="docker-compose"
+alias dc-all-remove="docker ps -aq | xargs docker rm"
 
 # Common ls
 case ${OSTYPE} in

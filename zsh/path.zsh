@@ -1,8 +1,13 @@
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
+if [ -e "$HOME/.anyenv" ]
+then
+    export ANYENV_ROOT="$HOME/.anyenv"
+    export PATH="$ANYENV_ROOT/bin:$PATH"
+    if command -v anyenv 1>/dev/null 2>&1
+    then
+        eval "$(anyenv init -)"
+    fi
+fi
 
-# anyenv
-eval "$(anyenv init -)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -30,15 +35,14 @@ case ${OSTYPE} in
         export PATH="$HOMEBREW_PATH/sbin:$PATH"
 
         # PHP
-        export PATH="$HOMEBREW_PATH/opt/php@7.4/bin:$PATH"
-        export PATH="$HOMEBREW_PATH/opt/php@7.4/sbin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@8.0/bin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@8.0/sbin:$PATH"
 
         # Rust
         export PATH="$HOME/.cargo/bin:$PATH"
 
         # Go
-        export GOPATH=$HOME/go
-        export PATH=$GOPATH/bin:$PATH
+        GOENV_DISABLE_GOPATH=1
 
         # Python
         export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
