@@ -7,7 +7,6 @@ SCRIPT_DIR=$HOME/dotfiles
 [ -f ~/zsh/plugins.zsh ] && source $SCRIPT_DIR/zsh/plugins.zsh
 [ -f ~/zsh/.p10k.zsh ] && source $SCRIPT_DIR/zsh/.p10k.zsh
 [ -f ~/zsh/tmux.zsh ] && source $SCRIPT_DIR/zsh/tmux.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/zsh/function.zsh ] && source $SCRIPT_DIR/zsh/function.zsh
 
 conda activate lib-python-study
