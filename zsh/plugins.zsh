@@ -28,11 +28,18 @@ zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
 # color
 zinit light chrissicool/zsh-256color
 
-# batコマンドの追加 シンタックスハイライトをする
+# exa lsに色をつける
+zinit ice as"program" from"gh-r" mv"exa* -> exa"
+zinit light ogham/exa
+
+# batコマンドの追加 catにシンタックスハイライトをする
 zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zinit light sharkdp/bat
 
-# 以下はただのエイリアス設定
-if builtin command -v bat > /dev/null; then
-  alias cat="bat"
-fi
+# ripgrep
+zinit ice as"program" from"gh-r" mv"ripgrep* -> rg" pick"rg/rg"
+zinit light BurntSushi/ripgrep
+
+# fd
+zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
+zinit light sharkdp/fd

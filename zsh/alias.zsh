@@ -14,34 +14,17 @@ alias git-branch-delete="git branch --merged|egrep -v '\*|develop|master|main'|x
 alias dc="docker-compose"
 alias dc-all-remove="docker ps -aq | xargs docker rm"
 
-# Common ls
-case ${OSTYPE} in
-    darwin*)
-        export LSCOLORS=xbfxcxdxbxegedabagacad
-        alias ls='ls -G'
-        ;;
-    *)
-        eval `dircolors ~/.colorrc`
-        alias ls='ls --color=auto'
-        ;;
-esac
-
 # Common
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-# OS 別の設定
-case ${OSTYPE} in
-    darwin20.0*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -G -F'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -F --color=auto'
-        ;;
-    *)
-        echo "想定外のOSです。 ${OSTYPE}"
-esac
+# bat
+if builtin command -v bat > /dev/null; then
+    alias cat="bat"
+fi
+
+# exa
+if builtin command -v bat > /dev/null; then
+    alias ls="exa"
+fi
