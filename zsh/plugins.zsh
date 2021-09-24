@@ -1,5 +1,7 @@
+# powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+# fzf
 zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
@@ -25,3 +27,12 @@ zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
 
 # color
 zinit light chrissicool/zsh-256color
+
+# batコマンドの追加 シンタックスハイライトをする
+zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit light sharkdp/bat
+
+# 以下はただのエイリアス設定
+if builtin command -v bat > /dev/null; then
+  alias cat="bat"
+fi
