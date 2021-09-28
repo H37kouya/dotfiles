@@ -25,7 +25,7 @@ if builtin command -v bat > /dev/null; then
 fi
 
 # exa
-if builtin command -v bat > /dev/null; then
+if builtin command -v exa > /dev/null; then
     alias ls="exa"
     alias ls-tree="exa --tree"
 fi
