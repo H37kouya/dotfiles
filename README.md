@@ -1,6 +1,13 @@
 # dotfiles
 
+If there is no nerd font, the characters will be garbled.
+
+My sub dotfiles (simple dotfiles) is [dotfiles-light](https://github.com/H37kouya/dotfiles-light).
+
 ## Installation
+
+It is necessary to set the nerd font.
+The reference is [wiki font](https://github.com/H37kouya/dotfiles/wiki/font)
 
 ```shell
 $ git clone https://github.com/H37kouya/dotfiles.git ~/dotfiles
@@ -8,7 +15,10 @@ $ git clone https://github.com/H37kouya/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 
 $ make deploy
+
+$ source ~/dotfiles
 ```
+
 
 ## WSL
 
@@ -37,4 +47,11 @@ Example, Windows terminal settings
   "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
   "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif"
 }
+```
+
+## Git
+```shell
+$ git config --local user.name <name>
+
+$ git config --local user.email <email>
 ```
