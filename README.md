@@ -2,7 +2,7 @@
 
 If there is no nerd font, the characters will be garbled.
 
-My sub dotfiles (simple dotfiles) is [dotfiles-light](https://github.com/H37kouya/dotfiles-light).
+My sub dotfiles (simple dotfiles) is [H37kouya/dotfiles-light](https://github.com/H37kouya/dotfiles-light).
 
 ## Installation
 
