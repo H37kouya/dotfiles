@@ -19,6 +19,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# norminette
+alias norminette="~/.norminette/norminette.rb"
+
 # bat
 if builtin command -v bat > /dev/null; then
     alias cat="bat"
