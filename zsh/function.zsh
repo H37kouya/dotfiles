@@ -14,3 +14,16 @@ function zinit-update() {
     # Plugin parallel update
     zinit update --parallel
 }
+
+# update all
+function update-all() {
+    # software update
+    softwareupdate -ia
+
+    # brew update
+    brew update
+    brew upgrade
+
+    # zinit update
+    zinit-update
+}
