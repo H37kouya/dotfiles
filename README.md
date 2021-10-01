@@ -20,6 +20,14 @@ $ source ~/dotfiles
 ```
 
 
+## Update
+
+```shell
+# zinit自身の更新とプラグインの更新
+$ zinit-update
+```
+
+
 ## WSL
 
 ### Installation for hackgen
