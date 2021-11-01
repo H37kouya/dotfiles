@@ -21,11 +21,13 @@ alias rm='rm -i'
 
 # bat
 if builtin command -v bat > /dev/null; then
+    # cat を bat に置き換える
     alias cat="bat"
 fi
 
 # exa
 if builtin command -v exa > /dev/null; then
+    # ls を exa に置き換える
     alias ls="exa"
     alias ls-tree="exa --tree"
 fi

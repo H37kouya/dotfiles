@@ -28,6 +28,10 @@ zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
 # color
 zinit light chrissicool/zsh-256color
 
+# jq をインタラクティブに使える。JSONを標準出力に出すコマンドを入力した状態で `Alt+j` すると jq のクエリが書ける。
+zinit ice wait'1' lucid
+zinit light reegnz/jq-zsh-plugin
+
 # exa lsに色をつける
 zinit ice as"program" from"gh-r" mv"exa* -> exa"
 zinit light ogham/exa

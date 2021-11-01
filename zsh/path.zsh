@@ -48,9 +48,8 @@ case ${OSTYPE} in
         export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
 
         # GCC
-        # alias gcc="$HOMEBREW_PATH/opt/gcc/bin/gcc-11"
-        # export CC=gcc
-        # export CXX=gcc
+        export CC=gcc
+        export CXX=gcc
         ;;
 
     # WSL2
