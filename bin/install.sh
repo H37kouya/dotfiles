@@ -23,6 +23,9 @@ cat $SCRIPT_DIR/pkg/brew.txt | xargs brew install || true
 echo "brew install cask"
 cat $SCRIPT_DIR/pkg/cask.txt | xargs brew install --cask
 
+echo "vscode extensions install"
+cat $SCRIPT_DIR/pkg/vscode_extensions.txt | xargs -I {} code --install-extension {} --force
+
 echo "brew cleanup"
 brew cleanup
 

@@ -1,5 +1,4 @@
 anyenv
-asciinema
 bzip2
 clipper
 cmake

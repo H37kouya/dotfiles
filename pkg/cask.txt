@@ -11,7 +11,10 @@ kindle
 local
 mactex
 miniforge
+mono-mdk-for-visual-studio
 mysqlworkbench
 postman
 spotify
 viber
+visual-studio
+visual-studio-code
