@@ -50,6 +50,9 @@ case ${OSTYPE} in
         # GCC
         export CC=gcc
         export CXX=gcc
+
+        # LLVM
+        # export LLVM_CONFIG=/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config
         ;;
 
     # WSL2

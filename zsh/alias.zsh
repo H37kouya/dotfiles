@@ -19,6 +19,9 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# vim
+alias vim='nvim'
+
 # bat
 if builtin command -v bat > /dev/null; then
     # cat を bat に置き換える
