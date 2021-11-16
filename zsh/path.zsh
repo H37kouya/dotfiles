@@ -42,7 +42,7 @@ case ${OSTYPE} in
         export PATH="$HOME/.cargo/bin:$PATH"
 
         # Go
-        GOENV_DISABLE_GOPATH=1
+        # GOENV_DISABLE_GOPATH=1
 
         # Python
         export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
