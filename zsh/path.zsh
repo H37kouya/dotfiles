@@ -42,7 +42,7 @@ case ${OSTYPE} in
         export PATH="$HOME/.cargo/bin:$PATH"
 
         # Go
-        GOENV_DISABLE_GOPATH=1
+        # GOENV_DISABLE_GOPATH=1
 
         # Python
         export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
@@ -50,6 +50,9 @@ case ${OSTYPE} in
         # GCC
         export CC=gcc
         export CXX=gcc
+
+        # LLVM
+        # export LLVM_CONFIG=/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config
         ;;
 
     # WSL2

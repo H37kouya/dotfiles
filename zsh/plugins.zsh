@@ -28,6 +28,10 @@ zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
 # color
 zinit light chrissicool/zsh-256color
 
+# Better completion for npm
+zinit ice wait'1' lucid
+zinit light "lukechilds/zsh-better-npm-completion"
+
 # jq をインタラクティブに使える。JSONを標準出力に出すコマンドを入力した状態で `Alt+j` すると jq のクエリが書ける。
 zinit ice wait'1' lucid
 zinit light reegnz/jq-zsh-plugin
@@ -47,3 +51,6 @@ zinit light BurntSushi/ripgrep
 # fd
 zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
 zinit light sharkdp/fd
+
+# wakatime (https://wakatime.com/terminal)
+zinit light wbingli/zsh-wakatime

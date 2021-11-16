@@ -32,6 +32,7 @@ $ zinit-update
 
 ### Installation for hackgen
 
+
 Example, Windows terminal settings
 
 ```json
