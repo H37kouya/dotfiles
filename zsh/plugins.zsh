@@ -29,8 +29,12 @@ zinit ice wait'2' lucid atload"zicompinit; zicdreplay" blockf for \
 zinit light chrissicool/zsh-256color
 
 # Better completion for npm
-zinit ice wait'1' lucid
+zinit ice wait'2' lucid
 zinit light "lukechilds/zsh-better-npm-completion"
+
+# git open in browser
+zinit ice wait'2' lucid
+zinit light paulirish/git-open
 
 # jq をインタラクティブに使える。JSONを標準出力に出すコマンドを入力した状態で `Alt+j` すると jq のクエリが書ける。
 zinit ice wait'1' lucid
