@@ -51,6 +51,10 @@ case ${OSTYPE} in
         export CC=gcc
         export CXX=gcc
 
+        # OpenBlas
+        export OPENBLAS="$(brew --prefix openblas)/lib/"
+        export OPENBLAS_NUM_THREADS=4
+
         # LLVM
         # export LLVM_CONFIG=/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config
         ;;
