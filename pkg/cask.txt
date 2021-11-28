@@ -15,6 +15,7 @@ mono-mdk-for-visual-studio
 mysqlworkbench
 postman
 spotify
+typora
 viber
 visual-studio
 visual-studio-code
