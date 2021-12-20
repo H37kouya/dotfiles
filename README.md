@@ -27,6 +27,9 @@ $ source ~/dotfiles
 $ zinit-update
 ```
 
+## Homebrew
+
+https://brew.sh/index_ja
 
 ## WSL
 
@@ -59,6 +62,7 @@ Example, Windows terminal settings
 ```
 
 ## Git
+
 ```shell
 $ git config --local user.name <name>
 
