@@ -27,3 +27,13 @@ function update-all() {
     # zinit update
     zinit-update
 }
+
+# kill してはいけなさそうなプロセスは kill しないようにする kill
+function skill() {
+    if ps | grep $1 | awk '{print $4}' | grep -e zsh -e bash -e login -e darwin; then
+        echo 'このプロセスは zsh か bash 、login です。本当にキルしていいのですか？'
+        echo 'kill -9 '$1
+    else
+        kill -9 $1
+    fi
+}
