@@ -35,8 +35,8 @@ case ${OSTYPE} in
         export PATH="$HOMEBREW_PATH/sbin:$PATH"
 
         # PHP
-        export PATH="$HOMEBREW_PATH/opt/php@8.0/bin:$PATH"
-        export PATH="$HOMEBREW_PATH/opt/php@8.0/sbin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@7.4/bin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@7.4/sbin:$PATH"
 
         # Rust
         export PATH="$HOME/.cargo/bin:$PATH"
@@ -53,7 +53,7 @@ case ${OSTYPE} in
 
         # OpenBlas
         export OPENBLAS="$(brew --prefix openblas)/lib/"
-        export OPENBLAS_NUM_THREADS=2
+        export OPENBLAS_NUM_THREADS=4
 
         # LLVM
         export LLVM_CONFIG="/opt/homebrew/Cellar/llvm@11/11.1.0_3/bin/llvm-config"
