@@ -10,6 +10,9 @@ It is necessary to set the nerd font.
 The reference is [wiki font](https://github.com/H37kouya/dotfiles/wiki/font)
 
 ```shell
+# Mac のとき
+$ xcode-select --install
+
 $ git clone https://github.com/H37kouya/dotfiles.git ~/dotfiles
 
 $ cd ~/dotfiles
