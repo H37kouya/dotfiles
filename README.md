@@ -19,7 +19,7 @@ $ cd ~/dotfiles
 
 $ make deploy
 
-$ source ~/dotfiles
+$ source ~/.zshrc
 ```
 
 
