@@ -27,7 +27,7 @@ unset __conda_setup
 # Each OS
 case ${OSTYPE} in
     # M1 Mac
-    darwin20.0*)
+    darwin2*.*)
         HOMEBREW_PATH=/opt/homebrew
 
         # Homebrew
@@ -35,8 +35,8 @@ case ${OSTYPE} in
         export PATH="$HOMEBREW_PATH/sbin:$PATH"
 
         # PHP
-        export PATH="$HOMEBREW_PATH/opt/php@7.4/bin:$PATH"
-        export PATH="$HOMEBREW_PATH/opt/php@7.4/sbin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@8.1/bin:$PATH"
+        export PATH="$HOMEBREW_PATH/opt/php@8.1/sbin:$PATH"
 
         # Rust
         export PATH="$HOME/.cargo/bin:$PATH"
@@ -48,16 +48,14 @@ case ${OSTYPE} in
         export PATH="$HOMEBREW_PATH/Caskroom/miniforge/base/envs/lib-python-study/bin:$PATH"
 
         # GCC
-        export CC=gcc
-        export CXX=gcc
+        alias gcc="$HOMEBREW_PATH/opt/gcc/bin/gcc-11"
+        alias g++="$HOMEBREW_PATH/opt/gcc/bin/g++-11"
+        export CC="$HOMEBREW_PATH/opt/gcc/bin/gcc-11"
+        export CXX="$HOMEBREW_PATH/opt/gcc/bin/gcc-11"
 
         # OpenBlas
         export OPENBLAS="$(brew --prefix openblas)/lib/"
         export OPENBLAS_NUM_THREADS=4
-
-        # LLVM
-        export LLVM_CONFIG="/opt/homebrew/Cellar/llvm@11/11.1.0_3/bin/llvm-config"
-        # export LLVM_CONFIG=/usr/local/Cellar/llvm@9/9.0.1_2/bin/llvm-config
         ;;
 
     # WSL2
