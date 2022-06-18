@@ -40,21 +40,5 @@ zinit light paulirish/git-open
 zinit ice wait'1' lucid
 zinit light reegnz/jq-zsh-plugin
 
-# exa lsに色をつける
-zinit ice as"program" from"gh-r" mv"exa* -> exa"
-zinit light ogham/exa
-
-# batコマンドの追加 catにシンタックスハイライトをする
-zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
-zinit light sharkdp/bat
-
-# ripgrep
-zinit ice as"program" from"gh-r" mv"ripgrep* -> rg" pick"rg/rg"
-zinit light BurntSushi/ripgrep
-
-# fd
-zinit ice as"program" from"gh-r" mv"fd* -> fd" pick"fd/fd"
-zinit light sharkdp/fd
-
 # wakatime (https://wakatime.com/terminal)
 zinit light wbingli/zsh-wakatime
