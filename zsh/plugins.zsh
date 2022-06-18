@@ -36,9 +36,5 @@ zinit light "lukechilds/zsh-better-npm-completion"
 zinit ice wait'2' lucid
 zinit light paulirish/git-open
 
-# jq をインタラクティブに使える。JSONを標準出力に出すコマンドを入力した状態で `Alt+j` すると jq のクエリが書ける。
-zinit ice wait'1' lucid
-zinit light reegnz/jq-zsh-plugin
-
 # wakatime (https://wakatime.com/terminal)
 zinit light wbingli/zsh-wakatime
