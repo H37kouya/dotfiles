@@ -14,10 +14,16 @@ alias git-branch-delete="git branch --merged|egrep -v '\*|develop|master|main'|x
 alias dc="docker-compose"
 alias dc-all-remove="docker ps -aq | xargs docker rm"
 
+# Directories
+alias dotfiles="cd $DOTFILES"
+
 # Common
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+
+# PHP
+# alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
 
 # vim
 alias vim='nvim'
