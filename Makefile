@@ -1,5 +1,5 @@
 
-DOTFILES_EXCLUDES := .DS_Store .git .gitmodules .config
+DOTFILES_EXCLUDES := .DS_Store .git .gitmodules .config .claude .gitignore
 DOTFILES_TARGET   := $(wildcard .??*)
 DOTFILES_DIR      := $(PWD)
 DOTFILES_FILES    := $(filter-out $(DOTFILES_EXCLUDES), $(DOTFILES_TARGET))
