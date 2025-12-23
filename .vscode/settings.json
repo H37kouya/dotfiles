@@ -1,18 +1,10 @@
 {
-    "cSpell.userWords": [
-        "Kazuma",
-        "Qubit",
-        "cplx",
-        "imag"
-    ],
     "editor.fontFamily": "HackGen35Nerd, 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
     "editor.formatOnSave": true,
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
     "git.autofetch": true,
-    "go.gopath": "~/.anyenv/envs/goenv/shims/go",
-    "go.goroot": "~/.anyenv/envs/goenv/versions/1.16.3",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "window.zoomLevel": 1
+    "terminal.integrated.fontFamily": "'HackGen35 Console NF', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }

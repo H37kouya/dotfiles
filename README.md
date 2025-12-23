@@ -60,7 +60,8 @@ Example, Windows terminal settings
 ```json
 {
   "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
-  "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif"
+  "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "terminal.integrated.fontFamily": "'HackGen35 Console NF', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace"
 }
 ```
 

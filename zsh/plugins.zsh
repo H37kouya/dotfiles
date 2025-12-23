@@ -35,6 +35,3 @@ zinit light "lukechilds/zsh-better-npm-completion"
 # git open in browser
 zinit ice wait'2' lucid
 zinit light paulirish/git-open
-
-# wakatime (https://wakatime.com/terminal)
-zinit light wbingli/zsh-wakatime
