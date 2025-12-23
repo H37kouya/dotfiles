@@ -5,6 +5,6 @@
     "git.autofetch": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-    "terminal.integrated.fontFamily": "'HackGen Console', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "'HackGen35 Console NF', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
     "typescript.updateImportsOnFileMove.enabled": "always"
 }

@@ -61,7 +61,7 @@ Example, Windows terminal settings
 {
   "editor.fontFamily": "'HackGen35Nerd', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace",
   "markdown.preview.fontFamily": "HackGen35Nerd, -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
-  "terminal.integrated.fontFamily": "'HackGen Console', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace"
+  "terminal.integrated.fontFamily": "'HackGen35 Console NF', 'Hiragino Kaku Gothic ProN', Menlo, Monaco, 'Courier New', monospace"
 }
 ```
 
