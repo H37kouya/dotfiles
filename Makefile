@@ -14,7 +14,4 @@ install:
 	sh ./bin/install.sh
 
 update:
-	brew tap > pkg/brew_tap.txt
-	brew leaves > pkg/brew.txt
-	brew list --cask > pkg/cask.txt
-	code --list-extensions > pkg/vscode_extensions.txt
+	sh ./bin/update.sh
