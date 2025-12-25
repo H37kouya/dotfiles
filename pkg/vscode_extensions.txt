@@ -1,3 +1,4 @@
 anthropic.claude-code
 mhutchie.git-graph
+ms-vscode.makefile-tools
 pkief.material-icon-theme

@@ -1,6 +1,8 @@
 bruno
 claude
 claude-code
+cursor
+cursor-cli
 dbeaver-community
 docker-desktop
 figma
